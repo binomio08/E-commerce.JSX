@@ -1,7 +1,7 @@
 import React from "react";
 import { useState } from "react";
 
-const Itemcount = ({stock, initial, onAdd}) => {
+const ItemCount = ({stock, initial, onAdd}) => {
   const [cantidad, setCantidad] = useState(initial);
   const [itemStock, setItemStock] = useState(stock);
   const [itemAdd, setItemAdd] = useState(onAdd);
@@ -31,11 +31,11 @@ const Itemcount = ({stock, initial, onAdd}) => {
             <h2 className="text-center">Producto</h2>
             <div className="input-group">
               <input type="button" className="btn btn-primary" value="-" onClick={()=> {restarUnidad(cantidad - 1)}}/>
-              <input type="text" class="form-control text-center" value={cantidad} />
+              <p className="estadoContador ">{cantidad}</p>
               <input type="button" className="btn btn-primary" value="+" onClick={()=> {sumarUniadd(cantidad + 1)}}/>
             </div>
-                <div class="d-grid gap-2 pt-2">
-                    <button class="btn btn-primary" type="button" onClick={() => {agregarProducto()}}>Agregar al Carrito</button>
+                <div className="d-grid gap-2 pt-2">
+                    <input className="btn btn-primary" type="button"  value="Agregar al Carrito" onClick={() => {agregarProducto()}}/>
                 </div>
                 <p className="text-center">Productos Seleccionados: {itemAdd}</p>
           </div>
@@ -43,4 +43,4 @@ const Itemcount = ({stock, initial, onAdd}) => {
       </div>
     );
 }
-export default Itemcount;
+export default ItemCount;

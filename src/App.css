@@ -2,3 +2,9 @@ img {
   height: 60px;
   width: 60px;
 }
+
+
+.estadoContador{
+  padding: 10px 58px;
+  text-align: center;
+}

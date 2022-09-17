@@ -2,11 +2,12 @@ import React from "react";
 
 const Item = ({nombre, imagen, precio}) => {
     return(
-        <div className="card">
-            <img src={imagen} className="card-img-top" alt={nombre} />
+        <div className="card text-center">
+            <h4 className="card-title">{nombre}</h4>
+            <img src={imagen} className="card-img-top imagenes" alt={nombre}/>
             <div className="card-body">
-                <h5 className="card-title text-center"><b>{nombre}</b></h5>
-                <p className="card-text text-center">U${precio}</p>
+                <p className="card-text text-center"><b>${precio}</b></p>    
+                <a href="#" className="btn btn-primary text-center">Detalles</a>
             </div>
         </div>
     )

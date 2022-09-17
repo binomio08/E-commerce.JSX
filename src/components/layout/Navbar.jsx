@@ -1,6 +1,6 @@
 import React from "react";
 import '../../App.css'
-import Mando from "../assets/mando.ico"
+import Mando from "../assets/mando.ico";
 
 const navbar = () => {
     return (
@@ -8,7 +8,7 @@ const navbar = () => {
             <nav className="navbar navbar-expand-lg bg-black navbar-dark">
                 <div className="container-fluid">
                     <a className="navbar-brand" href="#">
-                        <img src={Mando} alt="" />
+                        <img className="logo" src={Mando} alt="" />
                     </a>
                     <button
                         className="navbar-toggler"

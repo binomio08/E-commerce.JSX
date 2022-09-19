@@ -4,12 +4,12 @@ import { useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { customFecth } from "./CustomFetch";
 import ItemList from "./ItemList";
-import Navbar from "./Navbar"
 
 
 function ItemListContainer ()  {
     const [items, setItems] = useState([]);
-    const{categoria} = useParams
+    const{categoria} = useParams()
+    console.log(categoria)
     
     useEffect(() => {
         if(!categoria){
@@ -23,7 +23,7 @@ function ItemListContainer ()  {
     }, [categoria])
 
     return(
-        <div className="container">
+        <div className="container my-5">
             <ItemList  items={items}/>
         </div>
     )

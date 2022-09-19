@@ -11,7 +11,7 @@ const products = [
         id: '2',
         nombre:"PC Gamer Intel",
         imagen:'https://res.cloudinary.com/dc8mx3c8d/image/upload/v1663428031/CoderMyNavbar/intel_bg3syr.jpg',
-        categoria: 'actualizacion',
+        categoria: 'combos',
         precio: '400'
     },
 
@@ -19,7 +19,7 @@ const products = [
         "id": '3',
         nombre:"PC Gamer AMD",
         imagen:'https://res.cloudinary.com/dc8mx3c8d/image/upload/v1663428031/CoderMyNavbar/rysen_qrs6f5.png',
-        categoria: 'actualizacion',
+        categoria: 'combos',
         precio: '390'
     },
 

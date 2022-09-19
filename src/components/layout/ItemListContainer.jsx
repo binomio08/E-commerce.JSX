@@ -1,25 +1,26 @@
 import React from "react";
 import { useState } from "react";
 import { useEffect } from "react";
+import { useParams } from "react-router-dom";
+import { customFecth } from "./CustomFetch";
 import ItemList from "./ItemList";
-import {products} from './Products';
+import Navbar from "./Navbar"
 
 
-const ItemListContainer = () => {
+function ItemListContainer ()  {
     const [items, setItems] = useState([]);
+    const{categoria} = useParams
     
-useEffect(() => {
-        const getProductos = new Promise((resolve) => {
-            setTimeout(() => {
-                resolve(products);
-            }, 1000);
-        });
-
-        getProductos.then((respuesta) => {
-            setItems(respuesta);
-            console.log(respuesta);
-        });
-    }, []);
+    useEffect(() => {
+        if(!categoria){
+        customFecth().then(response => {
+            setItems(response)})
+        } else {
+        customFecth().then(r => {
+            setItems(r.filter(st => st.categoria === categoria))
+        })
+        }
+    }, [categoria])
 
     return(
         <div className="container">

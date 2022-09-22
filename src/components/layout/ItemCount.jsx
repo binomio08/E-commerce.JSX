@@ -4,7 +4,7 @@ import { CartContext } from "./Contex";
 
 const ItemCount = ({props}) => {
   const {item} = props;
-    const {cart, setCart, addItem} = useContext(CartContext);
+    const {addItem} = useContext(CartContext);
     const [counter, setCounter] = useState(props.initial);
     const [itemStock, setItemStock] = useState(5);
 

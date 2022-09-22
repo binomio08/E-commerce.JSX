@@ -10,7 +10,7 @@ const navbar = () => {
         <div>
             <nav className="navbar navbar-expand-lg bg-black navbar-dark">
                 <div className="container">
-                    <Link className="navbar-brand" to={'/home'}>
+                    <Link className="navbar-brand" to={'/'}>
                         <img className="logo" src={Mando} alt="" />
                     </Link>
                     <button
@@ -27,16 +27,16 @@ const navbar = () => {
                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
                             <li className="nav-item">
-                                <Link className="nav-link active" aria-current="page" to= {'/home'}>Home</Link>
+                                <Link className="nav-link active" aria-current="page" to= {'/'}>Home</Link>
                             </li>
                             <li className="nav-item">
-                                <Link className="nav-link" to='/home/monitores'>Monitores</Link>
+                                <Link className="nav-link" to='/monitores'>Monitores</Link>
                             </li>
                             <li className="nav-item">
-                                <Link className="nav-link " to='/home/placas'> Placas de Video</Link  >
+                                <Link className="nav-link " to='/placas'> Placas de Video</Link  >
                             </li>
                             <li className="nav-item">
-                                <Link className="nav-link " to='/home/combos'> Combo Actualización</Link  >
+                                <Link className="nav-link " to='/combos'> Combo Actualización</Link  >
                             </li>
                         </ul>
                     </div>

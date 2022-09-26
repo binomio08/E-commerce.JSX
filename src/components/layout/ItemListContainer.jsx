@@ -9,7 +9,6 @@ import ItemList from "./ItemList";
 function ItemListContainer ()  {
     const [items, setItems] = useState([]);
     const{categoria} = useParams()
-    console.log(categoria)
     
     useEffect(() => {
         if(!categoria){

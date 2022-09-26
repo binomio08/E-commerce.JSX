@@ -2,6 +2,7 @@ import React from "react";
 import '../../App.css'
 import Mando from "../assets/mando.ico";
 import {Link,} from "react-router-dom"
+import CartWidget from "./Cartwidget";
 
 
 const navbar = () => {
@@ -37,6 +38,9 @@ const navbar = () => {
                             </li>
                             <li className="nav-item">
                                 <Link className="nav-link " to='/combos'> Combo Actualización</Link  >
+                            </li>
+                            <li className="nav-item">
+                                <CartWidget/>
                             </li>
                         </ul>
                     </div>

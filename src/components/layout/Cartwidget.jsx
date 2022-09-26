@@ -19,7 +19,7 @@ const CartWidget = () => {
         <Link to={"/cart"}>
             <button type="button" className="btn fondo_naranja position-relative">
                 <img src={carrito} alt="Carrito" />
-                <span className="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">{total}</span>
+                <span>{total}</span>
             </button>
         </Link>
     )
